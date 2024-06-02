@@ -1,5 +1,3 @@
-Sure, here's an updated README file with some fun animations and icons, along with the goal for the project:
-
 # 🍽️ Restaurant Reservation 2024
 
 Build a responsive restaurant reservation web app using JavaScript, React.js, Axios, and TailwindCSS.
