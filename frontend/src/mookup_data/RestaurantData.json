@@ -48,5 +48,45 @@
     "zipcode": "10001",
     "description": "City Lights Diner is open all day and night, serving classic American comfort food. Join us for breakfast, lunch, dinner, or a late-night snack.",
     "photo": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    "index": 6,
+    "name": "Green Garden Café",
+    "open_time": "7:00 AM",
+    "close_time": "9:00 PM",
+    "location": "123 Green St, Portland, OR",
+    "zipcode": "97201",
+    "description": "Green Garden Café offers a tranquil dining experience with a focus on organic and locally sourced ingredients.",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHlhgLpIVGgl3hjm2Um8YfYQE0cLrNUITNA&s"
+  },
+  {
+    "index": 7,
+    "name": "The Rustic Table",
+    "open_time": "10:00 AM",
+    "close_time": "10:00 PM",
+    "location": "456 Oak Ave, Austin, TX",
+    "zipcode": "78701",
+    "description": "The Rustic Table serves hearty, farm-to-table meals in a cozy, rustic setting. Perfect for family dinners and gatherings.",
+    "photo": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+  },
+  {
+    "index": 8,
+    "name": "Downtown Delight",
+    "open_time": "8:00 AM",
+    "close_time": "8:00 PM",
+    "location": "789 Main St, Chicago, IL",
+    "zipcode": "60601",
+    "description": "Downtown Delight is a modern eatery offering a diverse menu with something for everyone. Enjoy our vibrant downtown atmosphere.",
+    "photo": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "index": 9,
+    "name": "Lakeside Eatery",
+    "open_time": "11:00 AM",
+    "close_time": "10:00 PM",
+    "location": "101 Lake Rd, Minneapolis, MN",
+    "zipcode": "55401",
+    "description": "Lakeside Eatery offers a serene dining experience with beautiful lake views. Our menu features fresh, seasonal dishes.",
+    "photo": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 ]

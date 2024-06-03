@@ -2,22 +2,25 @@ import React from "react";
 import Restaurant_data from "../../mookup_data/RestaurantData.json";
 
 const MainReservation = () => {
-    return (
-      <div className="min-h-screen mx-4 py-12 flex items-center justify-center">
-        <div className="bg-white p-8 rounded-lg shadow-lg space-y-2">
-          <h1 className="text-2xl font-extrabold ">
-            {" "}
-            LET'S{" "}
-            <span className="text-red-700 hover:text-blue-800"> RESERVE</span> A
-            TABLE!{" "}
-          </h1>
-          <p className="font-mono text-wrap">
-            Ready to experience a delightful dining experience? Secure your spot
-            now at your favorite restaurant with just a few clicks! Don’t miss
-            out on enjoying the perfect meal with your loved ones. Reserve your
-            table today and let us take care of the rest. Click below to get
-            started on your reservation journey with QuickTable!
-          </p>
+  return (
+    <div className="min-h-screen mx-4 py-12 flex items-center justify-center">
+      <div className="bg-white p-8 rounded-lg shadow-lg space-y-2">
+        <h1 className="text-2xl font-extrabold ">
+          LET'S
+          <span className="text-red-700 hover:text-blue-800"> RESERVE</span> A
+          TABLE!
+        </h1>
+        <p className="font-mono text-wrap">
+          Ready to experience a delightful dining experience? Secure your spot
+          now at your favorite restaurant with just a few clicks! Don’t miss out
+          on enjoying the perfect meal with your loved ones. Reserve your table
+          today and let us take care of the rest. Click below to get started on
+          your reservation journey with QuickTable!
+        </p>
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4"
+       
+        >
           {Restaurant_data.map((data, index) => (
             <div key={index} className="border-2 p-4 rounded-lg shadow-lg">
               <img
@@ -36,13 +39,14 @@ const MainReservation = () => {
               </p>
             </div>
           ))}
-
-          <button className="border-2 p-2 bg-orange-200">
-            this button is used for selecting a restaurant
-          </button>
         </div>
+
+        <button className="border-2 p-2 bg-orange-200">
+          this button is used for selecting a restaurant
+        </button>
       </div>
-    );
+    </div>
+  );
 };
 
 export default MainReservation;
