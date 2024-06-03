@@ -2,7 +2,7 @@
 import React from 'react';
 
 function Layout({ children }) {
-  return <div className="pt-20 min-h-screen">{children}</div>;
+  return <div className="pt-20">{children}</div>;
 }
 
 export default Layout;
