@@ -5,7 +5,31 @@ function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl w-full space-y-8 bg-white p-8 rounded-lg shadow-lg">
-       
+        <div className="Intro">
+          <h2 className="content">Reserve A Table</h2>
+          <h3 className="sologan">
+            Your go-to solution for quick and easy restaurant reservations.
+          </h3>
+          <p className="promotion">
+            This online reservation app will help you make reservations for your
+            favorite restaurant in Portland area.
+          </p>
+          <div className="SpecificRestaurant">
+            <h3 className="restaurantName">
+              Please select your favorite restaurant to find a table!
+            </h3>
+            <form className="RestaurantForm">
+            <div className="dropdown">
+              <button>Select a restaurant</button>
+              <select className="RestaurantList">
+                <option value="Restaurant 1">Restaurant 1</option>
+                <option value="Restaurant 2">Restaurant 2</option>
+                <option value="Restaurant 3">Restaurant 3</option>
+              </select>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );
