@@ -21,12 +21,15 @@ const MainReservation = () => {
           today and let us take care of the rest. Click below to get started on
           your reservation journey with QuickTable!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4 ">
           {Restaurant_data.map((data, index) => (
             <div
               key={index}
               className="border-2 p-4 rounded-lg shadow-lg cursor-pointer hover:scale-105 hover:border-yellow-500 hover:shadow-2xl transform transition duration-500"
-              onClick={()=>select_restaurant(`You have selected ${data.name}`)}
+              onClick={() =>
+                select_restaurant(`You have selected ${data.name}`)
+              }
+              data-aos="fade-up"
             >
               <img
                 src={data.photo}
