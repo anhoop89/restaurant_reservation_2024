@@ -6,11 +6,13 @@ function Home() {
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl w-full space-y-8 bg-white p-8 rounded-lg shadow-lg">
         <div className="Intro">
-          <h2 className="content">Reserve A Table</h2>
-          <h3 className="sologan">
+          <h2 className="text-black-500 text-2xl font-bold">
+            Reserve A <span className="text-red-500 ">Table</span>
+          </h2>
+          <h3 className="text-blue-600 text-xl font-light">
             Your go-to solution for quick and easy restaurant reservations.
           </h3>
-          <p className="promotion">
+          <p>
             This online reservation app will help you make reservations for your
             favorite restaurant in Portland area.
           </p>
