@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Sunset Bistro",
+    "open_time": "11:00 AM",
+    "close_time": "10:00 PM",
+    "location": "123 Sunset Blvd, Los Angeles, CA",
+    "zipcode": "90001",
+    "description": "Experience fine dining with a view at Sunset Bistro. Our menu features a variety of gourmet dishes made with the freshest ingredients.",
+    "photo": "https://images.unsplash.com/photo-1565299543923-37dd37888355"
+  },
+  {
+    "name": "Urban Delight",
+    "open_time": "9:00 AM",
+    "close_time": "9:00 PM",
+    "location": "456 Market St, San Francisco, CA",
+    "zipcode": "94105",
+    "description": "Urban Delight offers a chic and cozy atmosphere perfect for brunch or dinner. Enjoy our signature cocktails and delectable dishes.",
+    "photo": "https://images.unsplash.com/photo-1552566626-52b82cee8e16"
+  },
+  {
+    "name": "Seaside Grill",
+    "open_time": "12:00 PM",
+    "close_time": "11:00 PM",
+    "location": "789 Ocean Ave, Miami, FL",
+    "zipcode": "33101",
+    "description": "Savor the flavors of the sea at Seaside Grill. Our menu features fresh seafood and stunning ocean views.",
+    "photo": "https://images.unsplash.com/photo-1555992336-03a23c51b9c1"
+  },
+  {
+    "name": "Mountain Top Café",
+    "open_time": "8:00 AM",
+    "close_time": "8:00 PM",
+    "location": "101 Alpine Rd, Denver, CO",
+    "zipcode": "80202",
+    "description": "Mountain Top Café is your perfect getaway for breakfast, lunch, or dinner with a view. Enjoy hearty meals and breathtaking mountain scenery.",
+    "photo": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9"
+  },
+  {
+    "name": "City Lights Diner",
+    "open_time": "6:00 AM",
+    "close_time": "11:00 PM",
+    "location": "202 Main St, New York, NY",
+    "zipcode": "10001",
+    "description": "City Lights Diner is open all day and night, serving classic American comfort food. Join us for breakfast, lunch, dinner, or a late-night snack.",
+    "photo": "https://images.unsplash.com/photo-1574672280698-0bff5fe4e777"
+  }
+]
