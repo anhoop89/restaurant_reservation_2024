@@ -14,19 +14,75 @@ function Home() {
             This online reservation app will help you make reservations for your
             favorite restaurant in Portland area.
           </p>
+
           <div className="SpecificRestaurant">
             <h3 className="restaurantName">
               Please select your favorite restaurant to find a table!
             </h3>
+
             <form className="RestaurantForm">
-            <div className="dropdown">
-              <button>Select a restaurant</button>
-              <select className="RestaurantList">
-                <option value="Restaurant 1">Restaurant 1</option>
-                <option value="Restaurant 2">Restaurant 2</option>
-                <option value="Restaurant 3">Restaurant 3</option>
-              </select>
+              <div className="dropdown">
+                <button>Select a restaurant</button>
+                <select className="RestaurantList">
+                  <option value="Restaurant 1">Restaurant 1</option>
+                  <option value="Restaurant 2">Restaurant 2</option>
+                  <option value="Restaurant 3">Restaurant 3</option>
+                </select>
               </div>
+
+              {/* Calendar */}
+              <div className="calendar">
+                <div className="calendar-content">
+                  <button id="prev-btn">
+                    <i className="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <div className="month-year" id="month-year"></div>
+                  <button id="next-btn">
+                    <i className="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div className="days">
+                  <div className="day">Sun</div>
+                  <div className="day">Mon</div>
+                  <div className="day">Tue</div>
+                  <div className="day">Wed</div>
+                  <div className="day">Thu</div>
+                  <div className="day">Fri</div>
+                  <div className="day">Sat</div>
+                </div>
+                <div className="dates" id="dates"></div>
+              </div>
+
+              {/* Time Reservation */}
+              <div className="time-reservation-dropdown">
+                <button>Time</button>
+                <select className="TimeAvailableList">
+                  <option value="7:00PM">7:00PM</option>
+                  <option value="11:00PM">11:00PM</option>
+                  <option value="8:00AM">8:00AM</option>
+                </select>
+              </div>
+
+              {/* Number of People */}
+              <div className="num-of-people-dropdown">
+                <button>Number of Guests</button>
+                <select className="Num-of-people">
+                  <option value="2 people">2 people</option>
+                  <option value="3 people">3 people</option>
+                  <option value="4 people">4 people</option>
+                  <option value="5 people">5 people</option>
+                  <option value="6 people">6 people</option>
+                  <option value="7 people">7 people</option>
+                  <option value="8 people">8 people</option>
+                  <option value="9 people">9 people</option>
+                  <option value="10 people">10 people</option>
+                  <option value="11 people">11 people</option>
+                  <option value="12 people">12 people</option>
+                </select>
+              </div>
+
+              {/* Submit Button */}
+              <button>Ready to Find</button>
             </form>
           </div>
         </div>
@@ -36,7 +92,6 @@ function Home() {
 }
 
 export default Home;
-
 
 //  <div>
 //           <h1 className="text-4xl font-extrabold text-gray-900 text-center">
