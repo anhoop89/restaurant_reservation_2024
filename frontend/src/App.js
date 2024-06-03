@@ -10,12 +10,12 @@ function App() {
     <Router>
       <NavBar />
       <Layout>
-      <Routes>
-        <Route path="/" element={<Home />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/reservation" element={<MainReservation />} />
         </Routes>
-        </Layout>
+      </Layout>
     </Router>
   );
 }
