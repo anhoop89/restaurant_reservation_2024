@@ -10,7 +10,7 @@ function Home() {
             Reserve A <span className="text-red-500 ">Table</span>
           </h2>
           <h3 className="text-blue-600 text-xl font-light">
-            Your go-to solution for quick and easy restaurant reservations.
+            Your go-to solution for quick and easy <span className="text-purple-500 font-bold">restaurant reservations.</span>
           </h3>
           <p>
             This online reservation app will help you make reservations for your
