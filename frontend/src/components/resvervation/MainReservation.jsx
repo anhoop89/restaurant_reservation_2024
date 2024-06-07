@@ -1,15 +1,16 @@
 import React from "react";
 import Restaurant_data from "../../mookup_data/RestaurantData.json";
+import Modal from "./form/reservationModal";
 
 const MainReservation = () => {
-
   const select_restaurant = (input) => {
-    alert(input)
-  }
+    alert(input);
+  };
+
   return (
     <div className="min-h-screen mx-4 py-12 flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-lg space-y-2">
-        <h1 className="text-2xl font-extrabold ">
+        <h1 className="text-2xl font-extrabold">
           LET'S
           <span className="text-red-700 hover:text-blue-800"> RESERVE</span> A
           TABLE!
@@ -21,11 +22,13 @@ const MainReservation = () => {
           today and let us take care of the rest. Click below to get started on
           your reservation journey with QuickTable!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
           {Restaurant_data.map((data, index) => (
             <div
               key={index}
-              className="border-2 p-4 rounded-lg shadow-lg cursor-pointer hover:scale-105 hover:border-yellow-500 hover:shadow-2xl transform transition duration-500"
+              className="border-2 p-4 rounded-lg shadow-lg cursor-pointer 
+              hover:scale-110 hover:border-yellow-500 hover:shadow-2xl transform 
+              transition-transform duration-500"
               onClick={() =>
                 select_restaurant(`You have selected ${data.name}`)
               }
@@ -48,7 +51,6 @@ const MainReservation = () => {
             </div>
           ))}
         </div>
-
         <button className="border-2 p-2 bg-orange-200">
           this button is used for selecting a restaurant
         </button>
