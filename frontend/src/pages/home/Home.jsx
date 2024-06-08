@@ -1,35 +1,59 @@
 // src/pages/Home.jsx
 import React from "react";
+import { useState } from "react";
 
-function Home() {
+  function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = (e) => {
+    e.preventDefault();
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl w-full space-y-8 bg-white p-8 rounded-lg shadow-lg">
         <div className="Intro">
-          <h2 className="text-black-500 text-2xl font-bold">
-            Reserve A <span className="text-red-500 ">Table</span>
+          <h2 className="text-black-500 text-5xl font-bold">
+            RESERVE A <span className="text-orange-600">TABLE</span>
           </h2>
-          <h3 className="text-blue-600 text-xl font-light">
-            Your go-to solution for quick and easy <span className="text-purple-500 font-bold">restaurant reservations.</span>
+          <h3 className="text-gray-500 text-xl font-semibold">
+            YOUR GO-TO SOLUTION FOR QUICK AND EASY{" "}
+            <span className="text-orange-400 font-bold text-decoration-line: underline">
+              RESTAURANT RESERVATIONS.
+            </span>
           </h3>
-          <p>
+          <p className="text-gray-600 text-bold">
             This online reservation app will help you make reservations for your
             favorite restaurant in Portland area.
           </p>
 
           <div className="SpecificRestaurant">
-            <h3 className="restaurantName">
-              Please select your favorite restaurant to find a table!
+            <h3 className="text-lg font-bold text-center text-black-300">
+              Please select your favorite restaurant to{" "}
+              <span className="text-orange-600">find a table!</span>
             </h3>
 
             <form className="RestaurantForm">
-              <div className="dropdown">
-                <button>Select a restaurant</button>
-                <select className="RestaurantList">
-                  <option value="Restaurant 1">Restaurant 1</option>
-                  <option value="Restaurant 2">Restaurant 2</option>
-                  <option value="Restaurant 3">Restaurant 3</option>
-                </select>
+              <div className="relative flex flex-col items-center border-solid border-[3px] border-orange-600 cursor-pointer font-bold">
+                <button
+                  className="hover:bg-orange-300 text-black-300 font-bold py-5 px-5 w-full h-full"
+                  onClick={toggleDropdown}
+                >
+                  Select a restaurant
+                </button>
+              {isOpen && (
+                <div className="absolute top-full mt-1 w-full border-solid border-[1px] border-black-300 bg-white rounded">
+                  <getSelection>
+                    <option value="Restaurant 1">Restaurant 1</option>
+                    <option value="Restaurant 2">Restaurant 2</option>
+                    <option value="Restaurant 3">Restaurant 3</option>
+                    <option value="Restaurant 4">Restaurant 4</option>
+                    <option value="Restaurant 5">Restaurant 5</option>
+                    <option value="Restaurant 6">Restaurant 6</option>
+                    <option value="Restaurant 7">Restaurant 7</option>
+                  </getSelection>
+                </div>
+                )}
               </div>
 
               {/* Calendar */}
