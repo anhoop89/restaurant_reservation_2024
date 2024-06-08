@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Restaurant_data from "../../mookup_data/RestaurantData.json";
-import ReservationModal from "./form/reservationModal";
+import ReservationModal from "./form/ReservationModal";
 
 const MainReservation = () => {
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);

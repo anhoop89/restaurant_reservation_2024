@@ -10,8 +10,8 @@ export default function ReservationModal({
 
   return (
     <div
-      className="fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center 
-            z-10"
+      className="fixed inset-0 bg-gray-600 bg-opacity-75 flex 
+      items-center justify-center z-10"
     >
       <div className="bg-white p-8 rounded-lg shadow-2xl w-1/2">
         <div>
