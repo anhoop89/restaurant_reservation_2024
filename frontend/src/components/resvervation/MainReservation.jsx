@@ -7,7 +7,7 @@ import ReservationModal from "./form/ReservationModal";
 const MainReservation = () => {
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
-
+  const [reservations, setReservations] = useState([]);
 
   const selectRestaurant = (restaurant) => {
     setSelectedRestaurant(restaurant);
@@ -19,12 +19,20 @@ const MainReservation = () => {
     setSelectedRestaurant(null);
   };
 
+  const submitReservation = (reservationData) => {
+    setReservations([...reservations, reservationData]);
+    alert("Reservation submitted!");
+    closeModal();
+    // Here you would typically send the data to your backend server
+    console.log("Reservations:", reservations);
+  };
+
   return (
     <div className="min-h-screen mx-4 py-12 flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-lg space-y-2 w-full">
         <h1 className="text-2xl font-extrabold text-center">
-          LET'S
-          <span className="text-red-700 hover:text-blue-800"> RESERVE</span> A
+          LET'S{" "}
+          <span className="text-red-700 hover:text-blue-800">RESERVE</span> A
           TABLE!
         </h1>
         <p className="font-mono text-wrap text-center">
@@ -59,15 +67,13 @@ const MainReservation = () => {
             </div>
           ))}
         </div>
-        <button className="border-2 p-2 bg-orange-200 mt-4">
-          This button is used for selecting a restaurant
-        </button>
         <ReservationModal
           open={modalOpen}
           onClose={closeModal}
+          onSubmit={submitReservation}
           selectedRestaurant={selectedRestaurant}
         />
-        </div>
+      </div>
     </div>
   );
 };
